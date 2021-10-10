@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background: white;
+}
+h2 {
+  font-size: 5rem;
+}
+
+.container {
+  position: absolute;
+  top: 5.5%;
+  left: 60%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  padding: 0 20px;
+}
+
+.cena::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s;
+}
+
+.cena:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 5rem;
+  color: black;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%) scale(6);
+}
+
+.logo1 {
+  display: flex;
+  position: absolute;
+  align-content: center;
+  left: 37%;
+  top: 50%;
+  font-size: 2rem;
+}
+
+.first-page,
+.third-page {
+  height: 100vh;
+  background: rgb(26, 26, 26);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home {
+  height: 100vh;
+}
+
+.first-page img {
+  height: 100%;
+}
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  background: #ff2bb0;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
+
+.initials {
+  display: flex;
+  align-items: right;
+  margin-right: -25rem;
+  margin-bottom: -50rem;
+  font-size: 1.5rem;
+  z-index: 7;
+  color: white;
+}
